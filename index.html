@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cwuwi Cookie – Dubai Chewy Cookie</title>
+  <meta name="description" content="Dubai chewy cookie isi pistachio dan kataifi, dipanggang fresh. Pesan lewat WhatsApp.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md sticky-top bg-body border-bottom">
+  <div class="container">
+    <a class="navbar-brand brand-font fs-3 text-success" href="#atas">Cwuwi Cookie</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav gap-md-3">
+        <li class="nav-item"><a class="nav-link" href="#isi">Isi Cookie</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="btn btn-success btn-sm rounded-pill px-3 mt-1 mt-md-0" href="#pesan">Pesan</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="atas" class="container py-5">
+  <div class="row align-items-center g-4">
+    <div class="col-md-6">
+      <span class="badge text-bg-warning mb-3" id="badge-po"></span>
+      <h1 class="display-4 brand-font">Dubai chewy cookie, kenyal di luar, renyah di dalam.</h1>
+      <p class="lead text-body-secondary my-4">Cookie cokelat tebal berisi krim pistachio dan kataifi renyah. Dipanggang batch kecil, selalu fresh.</p>
+      <a href="#pesan" class="btn btn-success btn-lg rounded-pill px-4">Pesan sekarang</a>
+      <a href="#galeri" class="btn btn-outline-secondary btn-lg rounded-pill px-4 ms-md-2 mt-2 mt-md-0">Lihat foto</a>
+      <div class="chips"><span>Dipanggang fresh</span><span>Isi pistachio penuh</span><span>Pesan via WhatsApp</span></div>
+    </div>
+    <div class="col-md-6 hero-foto-wrap"><span class="stempel" aria-hidden="true">Fresh<br>baked!</span><img id="hero-foto" class="foto hero-img w-100" alt="Dubai chewy cookie Cwuwi Cookie"></div>
+  </div>
+</header>
+
+<div class="pita" aria-hidden="true"><span>Chewy</span><span>Pistachio</span><span>Kataifi</span><span>Dark choco</span><span>Fresh baked</span></div>
+
+<section id="isi" class="container py-5">
+  <h2 class="judul brand-font display-6">Tiga lapis yang bikin nagih</h2>
+  <div class="row g-4 mt-1">
+    <div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body">
+      <div class="ikon" aria-hidden="true">🍪</div><h3 class="brand-font text-success h4">Cookie kenyal</h3>
+      <p class="card-text text-body-secondary">Adonan cokelat dengan tepi renyah dan tengah chewy dari cokelat batang asli.</p></div></div></div>
+    <div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body">
+      <div class="ikon" aria-hidden="true">🥜</div><h3 class="brand-font text-success h4">Krim pistachio</h3>
+      <p class="card-text text-body-secondary">Isian lembut pasta pistachio yang gurih manis, penuh sampai ke pinggir.</p></div></div></div>
+    <div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body">
+      <div class="ikon" aria-hidden="true">✨</div><h3 class="brand-font text-success h4">Kataifi renyah</h3>
+      <p class="card-text text-body-secondary">Mie kataifi disangrai mentega, memberi bunyi kriuk di setiap gigitan.</p></div></div></div>
+  </div>
+</section>
+
+<section id="tentang" class="container py-5">
+  <div class="row align-items-center g-5">
+    <div class="col-md-5"><img id="tentang-foto" class="foto tentang-img w-100" alt="Pemilik Cwuwi Cookie"></div>
+    <div class="col-md-7">
+      <h2 class="judul brand-font display-6" id="tentang-judul"></h2>
+      <div id="tentang-teks" class="mt-3"></div>
+      <p class="fw-bold mb-0" id="tentang-nama"></p>
+      <small class="text-body-secondary" id="tentang-peran"></small>
+    </div>
+  </div>
+</section>
+
+<section id="galeri" class="container py-5">
+  <h2 class="judul brand-font display-6">Galeri</h2>
+  <p class="text-body-secondary">Klik foto untuk memperbesar.</p>
+  <div id="galeri-grid" class="row row-cols-2 row-cols-md-3 g-3"></div>
+</section>
+
+<section id="pesan" class="container py-5">
+  <h2 class="judul brand-font display-6">Pesan lewat WhatsApp</h2>
+  <p class="text-body-secondary">Pilih varian, isi data, lalu pesanan terkirim ke WhatsApp kami.</p>
+  <div class="row g-4">
+    <div class="col-lg-7"><div id="items" class="list-group"></div></div>
+    <div class="col-lg-5">
+      <div class="card shadow-sm"><div class="card-body">
+        <div class="mb-3"><label for="nama" class="form-label fw-bold">Nama</label>
+          <input id="nama" class="form-control" autocomplete="name" placeholder="Nama kamu"></div>
+        <div class="mb-3"><label for="alamat" class="form-label fw-bold">Alamat pengiriman</label>
+          <textarea id="alamat" class="form-control" rows="3" placeholder="Alamat lengkap atau ambil di tempat"></textarea></div>
+        <div class="mb-3"><label for="catatan" class="form-label fw-bold">Catatan (opsional)</label>
+          <input id="catatan" class="form-control" placeholder="Contoh: kirim sore hari"></div>
+        <div class="d-flex justify-content-between fs-5 fw-bold mb-3"><span>Total</span><span id="total">Rp0</span></div>
+        <button id="kirim" class="btn btn-success w-100 rounded-pill py-2" type="button">Kirim pesanan ke WhatsApp</button>
+        <div id="err" class="alert alert-danger py-2 mt-3 d-none" role="alert"></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="lokasi" class="container py-5">
+  <h2 class="judul brand-font display-6">Lokasi kami</h2>
+  <div class="row g-4 mt-1">
+    <div class="col-lg-5">
+      <div class="card h-100 shadow-sm"><div class="card-body">
+        <h3 class="h5 fw-bold" id="lok-nama"></h3>
+        <p id="lok-alamat" class="text-body-secondary mb-2"></p>
+        <p id="lok-jam" class="small mb-4"></p>
+        <a id="lok-buka" class="btn btn-success rounded-pill" href="#" target="_blank" rel="noopener">Buka di Google Maps</a>
+        <a id="lok-arah" class="btn btn-outline-secondary rounded-pill ms-md-2 mt-2 mt-md-0" href="#" target="_blank" rel="noopener">Petunjuk arah</a>
+      </div></div>
+    </div>
+    <div class="col-lg-7">
+      <iframe id="lok-peta" class="peta" title="Peta lokasi Cwuwi Cookie" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="testimoni" class="container py-5">
+  <h2 class="judul brand-font display-6">Kata pembeli</h2>
+  <div id="testi-grid" class="row g-4 mt-1"></div>
+</section>
+
+<section id="faq" class="container py-5">
+  <h2 class="judul brand-font display-6 mb-3">Pertanyaan yang sering ditanya</h2>
+  <div class="accordion" id="faq-list"></div>
+</section>
+
+<footer class="bg-dark text-light py-4 mt-4">
+  <div class="container">
+    <p class="mb-1"><strong>Cwuwi Cookie</strong> – UMKM Dubai chewy cookie</p>
+    <p class="mb-1 small" id="f-info"></p>
+    <a id="wa-link" class="link-warning small me-3" href="#">WhatsApp</a>
+    <a id="ig-link" class="link-warning small" href="#" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<!-- Lightbox foto -->
+<div class="modal fade" id="foto-modal" tabindex="-1" aria-label="Foto besar">
+  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-transparent border-0">
+    <img id="foto-besar" class="img-fluid rounded-4" alt="">
+  </div></div>
+</div>
+
+<a id="wa-fab" class="wa-fab shadow" href="#" target="_blank" rel="noopener">💬 Chat WhatsApp</a>
+
+<!-- Mode edit foto -->
+<input type="file" id="pilih-foto" accept="image/*" hidden>
+<button id="btn-edit" type="button" class="btn btn-dark rounded-pill shadow edit-fab">✎ Edit foto</button>
+<div id="edit-bar" class="edit-bar d-none">
+  <span class="small">Klik foto mana saja untuk menggantinya.</span>
+  <button id="btn-unduh" type="button" class="btn btn-success btn-sm rounded-pill">Unduh foto</button>
+  <button id="btn-reset" type="button" class="btn btn-outline-danger btn-sm rounded-pill">Reset</button>
+  <button id="btn-selesai" type="button" class="btn btn-dark btn-sm rounded-pill">Selesai</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
